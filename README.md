@@ -15,6 +15,8 @@ Una vez desarrollada la idea se hizo un diagrama de flujo donde quedaba reflejad
 
 A continunación se puede ver el primer diagrama de la aplicación:
 
+![El primer diagrama de flujo de nuestra aplicación](ReadMe/DiagramaDeFlujo1.png)
+
 ## Tercera fase: Comienzo del Código.
-Al tener e
+
 
