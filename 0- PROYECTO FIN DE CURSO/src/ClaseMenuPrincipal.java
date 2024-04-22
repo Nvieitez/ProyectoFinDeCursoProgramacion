@@ -41,7 +41,7 @@
                 //Creamos un panel para añadir los botones
                 JPanel panel = new JPanel();
                 panel.setLayout(null);
-                panel.setBackground(new Color(163,67,67));
+                panel.setBackground(new Color(49,54,63));
                 add(panel);
 
                 // Ahora vamos a implementar los botones del menú y la funcionalidad de cada uno.
@@ -51,9 +51,9 @@
                 // Primero vamos a introducir el botón al entorno gráfico.
                 JButton botonVerLista = new JButton("Ver la lista de músicos");
                 botonVerLista.setBounds(70,50,200,35);
-                botonVerLista.setBorder(BorderFactory.createLineBorder(Color.BLACK,3));
-                botonVerLista.setForeground(Color.WHITE);
-                botonVerLista.setBackground(new Color(49,54,63));
+                botonVerLista.setBorder(BorderFactory.createLineBorder(Color.RED,3));
+                botonVerLista.setForeground(Color.BLACK);
+                botonVerLista.setBackground(new Color(163,67,67));
 
                 // Una vez introducido el botón, vamos a añadir un "Action Listener" para que responda al usuario.
                 botonVerLista.addActionListener(new ActionListener() {                    
@@ -75,9 +75,9 @@
                 //Boton para añadir datos a la biblioteca
                 JButton botonAnadirDatos = new JButton("Añadir datos");
                 botonAnadirDatos.setBounds(70,100,200,35);
-                botonAnadirDatos.setBorder(BorderFactory.createLineBorder(Color.BLACK,3));
-                botonAnadirDatos.setForeground(Color.WHITE);
-                botonAnadirDatos.setBackground(new Color(49,54,63));
+                botonAnadirDatos.setBorder(BorderFactory.createLineBorder(Color.RED,3));
+                botonAnadirDatos.setForeground(Color.BLACK);
+                botonAnadirDatos.setBackground(new Color(163,67,67));
                 
                 // Una vez introducido el botón, vamos a añadir un "Action Listener" para que responda al usuario.
                 botonAnadirDatos.addActionListener(new ActionListener() {                    
@@ -99,9 +99,9 @@
                 //Botón para eliminar datos de la biblioteca
                 JButton botonEliminarDatos = new JButton("Eliminar Datos");
                 botonEliminarDatos.setBounds(70,150,200,35);
-                botonEliminarDatos.setBorder(BorderFactory.createLineBorder(Color.BLACK,3));
-                botonEliminarDatos.setForeground(Color.WHITE);
-                botonEliminarDatos.setBackground(new Color(49,54,63));
+                botonEliminarDatos.setBorder(BorderFactory.createLineBorder(Color.RED,3));
+                botonEliminarDatos.setForeground(Color.BLACK);
+                botonEliminarDatos.setBackground(new Color(163,67,67));
 
                 // Una vez introducido el botón, vamos a añadir un "Action Listener" para que responda al usuario.
                 botonEliminarDatos.addActionListener(new ActionListener() {                    
