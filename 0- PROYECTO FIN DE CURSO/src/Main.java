@@ -19,7 +19,7 @@
     // INICIO DEL CÓDIGO ========================================================================================================
         public static void main(String[] args) throws Exception {
 
-        new ClaseMenuPrincipal();
+        new ClaseMenuPrincipal().setVisible(true);
 
 
 

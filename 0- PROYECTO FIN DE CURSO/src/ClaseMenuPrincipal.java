@@ -33,6 +33,7 @@
 
                 // Dentro del constructor vamos a usar "Super" para poner un título a la ventana que generará nuestro programa al iniciarse.
                 super ("Título Proyecto");
+                setSize(350,300);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 setLocationRelativeTo(null);
                 setResizable(false);
@@ -90,7 +91,7 @@
                 });// Fin del ActionListener.
 
                 // Una vez finalizado el ActionListener vamos a incluir el botón en el layout para que se muestre en el entorno gráfico.
-                panel.add(botonAnadirDatos)
+                panel.add(botonAnadirDatos);
 
             // BOTÓN ELIMINAR DATOS ===========================================================================================================================
 
