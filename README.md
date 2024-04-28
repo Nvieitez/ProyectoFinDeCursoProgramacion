@@ -1,5 +1,5 @@
-# Título de la aplicación
-Esta aplicación titulada "" es un proyecto de fin de curso confeccionado por Nicolás Viéitez Domínguez y Susana Santos Mallqui para el ciclo superior de "Desarrollo de Aplicaciones Multimedia", comumente conocida como DAM.
+# FUNKYTOWN INC.
+Esta aplicación titulada "FunkyTown Inc." es un proyecto de fin de curso confeccionado por Nicolás Viéitez Domínguez y Susana Santos Mallqui para el ciclo superior de "Desarrollo de Aplicaciones Multimedia", comumente conocida como DAM.
 
 En este ReadMe incluirá de manera resumida el proceso del proyecto y todos los pasos que se han dado desde la creación de la idea hasta el completo funcionamiento del programa.
 
