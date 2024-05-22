@@ -18,7 +18,6 @@
 
 // Aquí vamos a determinar la localización de nuestra clase, esto nos permitirá dividir el programa y hacerlo más ágil.
 
-
 // IMPORTS ------------------------------------------------------------------------------------------------------------------------------------------
 
 // Aquí vamos a importar todas las funcionalidades necesarias para el correcto funcionamiento de nuestro programa.

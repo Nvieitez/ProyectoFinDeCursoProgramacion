@@ -1,7 +1,9 @@
 package Vista;
 
 import javax.swing.*;
+import javax.swing.plaf.BorderUIResource;
 import javax.swing.plaf.ColorUIResource;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -29,7 +31,7 @@ public class ListaDeCompras extends JFrame{
         JLabel labelBuscarDisco = new JLabel();
         JLabel labelBuscarArtista = new JLabel();
         JLabel labelCondicion = new JLabel();
-        JLabel labelTitulo = new JLabel();
+        JLabel labelTextoListaDeCompra = new JLabel();
 
         JTable tablaCompras = new JTable();
 
@@ -327,21 +329,33 @@ public class ListaDeCompras extends JFrame{
 
         // Incluimos el label en el JPanel.
         panelListaDeCompras2.add(labelBuscarCancion);
+      
+// TEXTO LISTA COMPRA -------------------------------------------------------------------------------------------------------------------------------
 
-// ETIQUETA TITULO -----------------------------------------------------------------------------------------------------------------------------
+        // Primero declaramos la imagen que vayamos a importar.
+        ImageIcon imagenListaDeCompra = new ImageIcon("src/Recursos/Imágenes/TextoListaDeCompra.png");
 
-        labelTitulo.setText("Lista de Compra");
-        labelTitulo.setBounds(370, 30, 300, 40);
-        labelTitulo.setFont(new Font("Arial", Font.BOLD, 30));
-        labelTitulo.setForeground(new Color(246, 236, 201));
-        panelListaDeCompras1.add(labelTitulo);
+        // Ahora la incluimos en una variable temporal para poder modificarla.
+        Image imagenListaDeCompraTemporal = imagenListaDeCompra.getImage();
 
-// TABLA DE COMPRAS -----------------------------------------------------------------------------------------------------------------------------
+        // Editamos la imagen.
+        Image nuevaImagenListaDeCompra = imagenListaDeCompraTemporal.getScaledInstance(300, 100, Image.SCALE_SMOOTH);
 
-        tablaCompras.setBounds(290, 100, 400, 250);
-        tablaCompras.setBackground(new Color(78, 175, 179));
-        tablaCompras.setForeground(new Color(232, 232, 232));
-        tablaCompras.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        // Ahora convertimos la nueva imagen de vuelta en un icono.
+        imagenListaDeCompra = new ImageIcon(nuevaImagenListaDeCompra);
+
+        // Convertimos el JLabel en el icono.
+        labelTextoListaDeCompra.setIcon(imagenListaDeCompra);
+
+        // Localización del Jlabel
+        labelTextoListaDeCompra.setBounds(220, 10, 300, 100);
+
+        // Incluimos el label en el JPanel.
+        panelListaDeCompras1.add(labelTextoListaDeCompra);
+
+// TABLA DE COMPRAS ---------------------------------------------------------------------------------------------------------------------------------
+
+        // Creamos un array para introducir datos en la tabla
         tablaCompras.setModel(new DefaultTableModel(
                 new Object[][]{
                         {"Michael Jackson", "Thriller","55.00"},
@@ -350,20 +364,37 @@ public class ListaDeCompras extends JFrame{
                 },
                 new String[]{"Artista","Album", "Precio"}
         ));
-        tablaCompras.setFont(new Font("Arial", Font.PLAIN, 14));
-        tablaCompras.setColumnSelectionAllowed(true);
-        tablaCompras.setRowSelectionAllowed(true);
-        tablaCompras.getTableHeader().setReorderingAllowed(false);
+        
+        // Creamos la tabla transparente
+        tablaCompras.setOpaque(false); 
+        ((DefaultTableCellRenderer)tablaCompras.getDefaultRenderer(Object.class)).setOpaque(false);
+        
+        // Le damos color a las letras
+        tablaCompras.setForeground(new Color(255, 255, 255));
+
+        // Le damos tamaño a las filas
+        tablaCompras.setRowHeight(55);
+
+        // Añadimos la tabla al Frame
         panelListaDeCompras1.add(tablaCompras);
 
+        // Creamos un scroll para poder movernos dentro de la tabla
         JScrollPane scroll = new JScrollPane(tablaCompras);
-        scroll.setBounds(290, 100, 400, 250);
+
+        // Le ponemos las filas transparentes
+        scroll.setOpaque(false);
+        scroll.getViewport().setOpaque(false);
+
+        // Localización
+        scroll.setBounds(220, 100, 540, 310);
+
+        // Añadimos el scroll al panel
         panelListaDeCompras1.add(scroll);
 
 // BOTÓN ELIMINAR ----------------------------------------------------------------------------------------------------------------------------
 
         botonEliminar.setText("Quitar");
-        botonEliminar.setBounds(250, 400, 120, 35);
+        botonEliminar.setBounds(250, 440, 120, 35);
         botonEliminar.setBackground(new Color(192, 57, 43));
         botonEliminar.setForeground(new Color(246, 236, 201));
         botonEliminar.setFocusPainted(false);
@@ -374,7 +405,7 @@ public class ListaDeCompras extends JFrame{
 // BOTÓN TOTAL ----------------------------------------------------------------------------------------------------------------------------
 
         botonTotal.setText("Total");
-        botonTotal.setBounds(430, 400, 120, 35);
+        botonTotal.setBounds(430, 440, 120, 35);
         botonTotal.setBackground(new Color(192, 57, 43));
         botonTotal.setForeground(new Color(246, 236, 201));
         botonTotal.setFocusPainted(false);
@@ -385,7 +416,7 @@ public class ListaDeCompras extends JFrame{
 // BOTÓN COMPRAR ----------------------------------------------------------------------------------------------------------------------------
 
         botonComprar.setText("Comprar");
-        botonComprar.setBounds(600, 400, 120, 35);
+        botonComprar.setBounds(600, 440, 120, 35);
         botonComprar.setBackground(new Color(192, 57, 43));
         botonComprar.setForeground(new Color(246, 236, 201));
         botonComprar.setFocusPainted(false);
@@ -396,7 +427,7 @@ public class ListaDeCompras extends JFrame{
 // ETIQUETA DE CONDICIÓN ----------------------------------------------------------------------------------------------------------------------------
 
         labelCondicion.setText("*Debes iniciar sesión para comprar");
-        labelCondicion.setBounds(350, 480, 300, 40);
+        labelCondicion.setBounds(350, 500, 300, 40);
         labelCondicion.setFont(new Font("Arial", Font.BOLD, 15));
         panelListaDeCompras1.add(labelCondicion);
 
