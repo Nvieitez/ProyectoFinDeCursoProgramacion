@@ -329,7 +329,7 @@ public class ListaDeCompras extends JFrame{
 
         // Incluimos el label en el JPanel.
         panelListaDeCompras2.add(labelBuscarCancion);
-
+      
 // TEXTO LISTA COMPRA -------------------------------------------------------------------------------------------------------------------------------
 
         // Primero declaramos la imagen que vayamos a importar.
