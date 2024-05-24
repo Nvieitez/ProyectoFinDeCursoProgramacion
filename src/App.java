@@ -23,16 +23,18 @@
 // Aquí vamos a importar todas las funcionalidades necesarias para el correcto funcionamiento de nuestro programa.
 
 // Primero vamos a importar la clase "MenuPrincipal" para poder iniciar el programa con el entorno gráfico.
+import Vista.MenuPrincipal;
+
+// Ahora importamos la clase "BaseDeDatos" para poder iniciar la base de datos.
+import Modelo.BasesDeDatos.BaseDeDatos;
 
 // CLASE APP ----------------------------------------------------------------------------------------------------------------------------------------
-
-import Vista.ListaDeCompras;
-import Vista.MenuPrincipal;
 
 // Esta es la clase principal, desde aquí se iniciarán todos los procesos de nuestro programa.
 public class App {
 
-// COMIENZO DEL CÓDIGO ------------------------------------------------------------------------------------------------------------------------------
+    // COMIENZO DEL CÓDIGO
+    // ------------------------------------------------------------------------------------------------------------------------------
 
     /**
      * Es el método principal, inicia todo el programa.
@@ -40,18 +42,22 @@ public class App {
      * @author Nicolás Viéitez Domínguez
      * @author Susana Isabel Santos Mallqui.
      *
-     * @param args Conocemos como "args" a un array que puede recibir datos directamente desde la consola del sistema operativo.
-     * @throws Exception Muestra un error en caso de que cualquier parte del programa falle.
+     * @param args Conocemos como "args" a un array que puede recibir datos
+     *             directamente desde la consola del sistema operativo.
+     * @throws Exception Muestra un error en caso de que cualquier parte del
+     *                   programa falle.
      *
      * @since V1.0
      */
 
     public static void main(String[] args) throws Exception {
 
-        // Para iniciar nuestro programa vamos a llamar al la clase "MenúPrincipal" para que inicie nuestro entorno gráfico.
-        //MenuPrincipal.metodoMenuPrincipal();
+        // Para iniciar nuestro programa vamos a llamar al la clase "MenúPrincipal" para
+        // que inicie nuestro entorno gráfico.
+        MenuPrincipal.metodoMenuPrincipal();
 
-        ListaDeCompras.metodoListaDeCompras();
+        // También vamos a iniciar la base de datos.
+        BaseDeDatos.metodoConexionBaseDeDatos();
 
     } // Fin de la clase "App".
 
