@@ -50,9 +50,9 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         // Para iniciar nuestro programa vamos a llamar al la clase "MenúPrincipal" para que inicie nuestro entorno gráfico.
-        //MenuPrincipal.metodoMenuPrincipal();
+        MenuPrincipal.metodoMenuPrincipal();
 
-        ListaDeCompras.metodoListaDeCompras();
+        //ListaDeCompras.metodoListaDeCompras();
 
     } // Fin de la clase "App".
 
