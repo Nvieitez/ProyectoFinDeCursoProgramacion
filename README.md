@@ -23,7 +23,25 @@ A continunación se puede ver el primer diagrama de la aplicación:
 
 
 ## Tercera fase: Codificamos el programa.
-Empezamos con la codificación del programa, creando las clases que tengan los datos de usuario, artistas, discos, canciones. Según a lo que tenemos
+Empezamos con la codificación del programa, creando las clases que tengan los datos de usuario, artistas, discos, canciones. Según a lo que tenemos en el diagrama. Vamos creando por carpetas: 
+  - Recursos, donde van las imagenes.
+  - Interfaz Gráfica, donde va la interfaz que maneja el usuario.
+  - Estructura de datos, donde van los datos de usuarios, artistas, discos, canciones.
+Esto es lo que inicialmente creamos, pero luego según a la rubrica modificamos el código ssegun a los siguientes diagramas para cumplir con la arquitectura MVC.
+
+![El diagrama de secuencia de nuestra aplicación](Readme/Diagrama secuencial.jpg)
+
+
+
+![El segundo diagrama de clases inicial de nuestra apliación](Readme/DiagramaDeClases.png)
+
+
+
+Esto nos lleva a modificar el código, refactorizando las clases, y modificando los nombres de carpetas. También añadimos la base de datos en otra carpeta nueva junto a una libreria con el punto jar de java para conectarla. Luego cambiamos los nombres de las carpetas:
+  - Controlador, controla la view y lo comunica con el modelo.
+  - Modelo, maneja dentro la base de datos.
+  - Vista, aqui va toda la interfaz con la que interactura el usuario.
+
 
 
 
