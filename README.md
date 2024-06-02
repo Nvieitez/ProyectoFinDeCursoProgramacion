@@ -30,11 +30,6 @@ Empezamos con la codificación del programa, creando las clases que tengan los d
 Esto es lo que inicialmente creamos, pero luego según a la rubrica modificamos el código ssegun a los siguientes diagramas para cumplir con la arquitectura MVC.
 
 
-![El diagrama de secuencia de nuestra aplicación](Readme/DiagramaSecuencial.jpg)
-
-
-
-
 ![El segundo diagrama de clases inicial de nuestra apliación](Readme/DiagramaDeClases.png)
 
 
@@ -43,6 +38,10 @@ Esto nos lleva a modificar el código, refactorizando las clases, y modificando 
   - Controlador, controla la view y lo comunica con el modelo.
   - Modelo, maneja dentro la base de datos.
   - Vista, aqui va toda la interfaz con la que interactura el usuario.
+Agregamos las clases controller para Controlador que nos permite manejar la interfaz gráfica con la base de datos, esto se va a conectar con DatosInicioSesion, DatosArtista, DatosDisco, DatosCanciones. Estas clases van a interacturar luego con la interfaz grafica, es decir con las Vistas para que el usuario pueda recibir los datos según como lo necesita.
+
+
+![El diagrama de secuencia de nuestra aplicación](Readme/DiagramaSecuencial.jpg)
 
 
 
