@@ -15,11 +15,15 @@ Una vez desarrollada la idea se hizo un diagrama de flujo donde quedaba reflejad
 
 A continunación se puede ver el primer diagrama de la aplicación:
 
-![El primer diagrama de flujo de nuestra aplicación](ReadMe/DiagramaDeFlujo1.png)
+![El primer diagrama de flujo de nuestra aplicación](Readme/DiagramaDeFlujo1.png)
 
 
 
-![El diagrama de calses inicial de nuestra apliación](ReadMe/DiagramaDeClasesProyectoDam1.drawio.png)
+![El diagrama de clases inicial de nuestra apliación](Readme/DiagramaDeClasesProyectoDam1.drawio.png)
+
+
+## Tercera fase: Codificamos el programa.
+Empezamos con la codificación del programa, creando las clases que tengan los datos de usuario, artistas, discos, canciones. Según a lo que tenemos
 
 
 
