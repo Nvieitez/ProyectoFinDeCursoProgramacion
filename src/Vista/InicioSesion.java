@@ -33,7 +33,7 @@ public class InicioSesion {
                 return usuarioBuscado;
         }
 
-        public static String getContraseña(){
+        public static String getContrasena(){
 
                 return contrasenaBuscada;
         }
