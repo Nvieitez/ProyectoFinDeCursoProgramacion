@@ -16,10 +16,14 @@ Una vez desarrollada la idea se hizo un diagrama de flujo donde quedaba reflejad
 A continunación se puede ver el primer diagrama de la aplicación:
 
 ![El primer diagrama de flujo de nuestra aplicación](ReadMe/DiagramaDeFlujo1.png)
-
-
-
 ![El diagrama de calses inicial de nuestra apliación](ReadMe/DiagramaDeClasesProyectoDam1.drawio.png)
+
+## Tercera fase: Codificación.
+Una vez creados los diagramas, directamente empezamos a crear el programa a partir de ellos, estos al igual que el programa han ido cambiando y variando, lo cual se ve claramente en los diferentes releases que hemos creado, hasta que finalmente llegamos a los siguientes diagramas, siendo los más actuales y consistentes con el programa hoy en día.
+
+![El primer diagrama de flujo de nuestra aplicación](ReadMe/DiagramaSecuencial.jpg)
+![El diagrama de calses inicial de nuestra apliación](ReadMe/DiagramaDeClases.png)
+
 
 
 
