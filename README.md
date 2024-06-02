@@ -30,7 +30,7 @@ Empezamos con la codificación del programa, creando las clases que tengan los d
 Esto es lo que inicialmente creamos, pero luego según a la rubrica modificamos el código ssegun a los siguientes diagramas para cumplir con la arquitectura MVC.
 
 
-![El diagrama de secuencia de nuestra aplicación](Readme/Diagramasecuencial.jpg)
+![El diagrama de secuencia de nuestra aplicación](Readme/DiagramaSecuencial.jpg)
 
 
 
